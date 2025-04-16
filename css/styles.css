@@ -46,13 +46,30 @@ body{
 #img1{
     filter:grayscale(1);
 }
-
+.news-image{overflow: hidden;}
 .news-image>img{
     width: 100%;
 }
+
+.news-image>img{
+    transition: 2s;
+}
+.news-image>img:hover{
+    transform: scale(1.1) rotate(3deg);
+}
+
 .news-title>h2{
     text-align: center;
+    transition: 1s;
+    
 }
+
+.news-title>h2:hover{
+color:rgb(202, 42, 42);
+/* cursor: pointer; */
+}
+
+
 .news{
     border:2px solid black;
     border-radius: 10px;
@@ -60,6 +77,24 @@ body{
 }.news-text>p{
     padding: 10px;
 }
+
+
+#formContacto form input, #formContacto form textarea {
+    transition: 1s;
+    padding: 10px;
+    border-radius: 5px;
+}
+#formContacto form input:valid, #formContacto form textarea:valid{
+    background: rgb(7, 137, 46);
+}
+#formContacto form input:invalid, #formContacto form textarea:invalid{
+    background: rgb(174, 32, 10);
+}
+#formContacto form input[type="submit"]{
+    background: none;
+    cursor:pointer
+}
+
 
 
 /* pruebas */
